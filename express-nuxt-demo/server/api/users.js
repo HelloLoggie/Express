@@ -1,5 +1,11 @@
 import { Router } from 'express'
 
+let queryString = require('querystring')
+var obj={name:"一介布衣",url:"http://yijiebuyi.com"};
+var param = queryString.stringify(obj);
+console.log(param)
+var newobj = queryString.parse(param);
+console.log(typeof newobj, newobj)
 // 创建可安装的模块化路由处理程序，Router（）是完整的中间件和路由系统
 const router = Router()
 

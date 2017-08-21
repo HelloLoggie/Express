@@ -1,0 +1,112 @@
+{
+"ResponseStatus": {
+"Timestamp": "/Date(1501479914121+0800)/",
+"Ack": "Success",
+"Errors": [],
+"Extension": [
+{
+"Id": "CLOGGING_TRACE_ID",
+"Value": "8678903840575474377"
+},
+{
+"Id": "RootMessageId",
+"Value": "921812-0a022627-417077-138073"
+},
+{
+"Id": "auth",
+"Value": "FD47C3DFCB4354848C568F815A9CE2C23B84228C878E72E99586AEE65CAF86F0"
+}
+]
+},
+"triptype": 1,
+"xpdtlst": [
+{
+"segno": 1,
+"seqno": 0,
+"xpdttpe": 1,
+"xpdtname": "新郑机场T2贵宾室",
+"xpdtnote": [
+{
+"noteType": 1,
+"noteCnt": "http://uploadimg.fws.qa.nt.ctripcorp.com/upload/target/600v0i00000002l90772C.png"
+},
+{
+"noteType": 1,
+"noteCnt": "http://uploadimg.fws.qa.nt.ctripcorp.com/upload/target/600w0i00000002lbb60A2.png"
+},
+{
+"noteType": 1,
+"noteCnt": "http://uploadimg.fws.qa.nt.ctripcorp.com/upload/target/60030i00000002l7g838D.png"
+},
+{
+"noteType": 2,
+"noteCnt": "婴儿免费test"
+},
+{
+"noteType": 2,
+"noteCnt": "正餐热食"
+},
+{
+"noteType": 2,
+"noteCnt": "小食饮料"
+},
+{
+"noteType": 2,
+"noteCnt": "登机提醒"
+},
+{
+"noteType": 3,
+"noteCnt": "限时促销"
+},
+{
+"noteType": 4,
+"noteCnt": "小食饮料随便吃，比机场快餐还便宜"
+},
+{
+"noteType": 8,
+"noteCnt": "体验价"
+},
+{
+"noteType": 10,
+"noteCnt": "机场价"
+},
+{
+"noteType": 5,
+"noteCnt": "新郑机场T2贵宾室"
+},
+{
+"noteType": 6,
+"noteCnt": "3"
+},
+{
+"noteType": 9,
+"noteCnt": "0"
+},
+{
+"noteType": 11,
+"noteCnt": "300"
+},
+{
+"noteType": 12,
+"noteTit": "营业时间",
+"noteCnt": "00:00-23:59"
+},
+{
+"noteType": 12,
+"noteTit": "使用时长",
+"noteCnt": "2小时"
+},
+{
+"noteType": 12,
+"noteTit": "退订规则",
+"noteCnt": "如在有效期内未使用可免费退订"
+},
+{
+"noteType": 12,
+"noteTit": "使用方式",
+"noteCnt": "凭券码或二维码验证使用，婴儿可免费使用"
+}
+]
+}
+]
+}

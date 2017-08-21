@@ -68,52 +68,30 @@ export function filter (xPrdList) {
   return prds
 }
 
-export function getUrl(){
+/*export function getUrl(){
   var domain = "";
   var protocol = "http:";
 
-    if (env === 'prod') { // 生产
-        domain = protocol === 'https' ? 'sec-m.ctrip.com' : 'm.ctrip.com';
-        protocol = "https:";
-    } else if(env === 'fws'){ // 其他
-        domain = 'gateway.m.fws.qa.nt.ctripcorp.com';
-    }
-    path = "restapi/soa2/12600/Flight/FlightXProductDetailInfo";
-}
+  var env ;
 
-/*function getQuery(paramName) {
- var path = /\?([^#]*)(#|$)/.exec(location.href);
+  if (env === 'prod') { // 生产
+      domain = protocol === 'https' ? 'sec-m.ctrip.com' : 'm.ctrip.com';
+      protocol = "https:";
+  } else if(env === 'fws'){ // 其他
+      domain = 'gateway.m.fws.qa.nt.ctripcorp.com';
+  }
+    path = "restapi/soa2/12600/Flight/FlightXProductDetailInfo";
+    return protocol + "//" + domain + "/" + path;
+}*/
+
+/*
+function getQuery(paramName) {
+ var path = /\?([^#]*)(#|$)/.exec(document.location.href);
  if (path) {
  path = new RegExp("(^|&)" + encodeURIComponent(paramName).replace(/([\-.*+?^${}()|[\]\/\\])/g, '\\$1') + "=([^&]*)(&|$)", "i").exec(path[1]);
  if (path) return decodeURIComponent(path[2]);
  }
  return null;
- }
-
- function getUrl() {
- var domain = '';
- //  var protocol = location.protocol;
- var protocol = "http:";
-
-
- // fat http
- // http://gateway.m.fws.qa.nt.ctripcorp.com/restapi/soa2/10771/Flight/FlightXProductDetailInfo
- // https://gateway.m.fws.qa.nt.ctripcorp.com/restapi/soa2/10771/Flight/FlightXProductDetailInfo
- //
- // prd http
- // http://m.ctrip.com/restapi/soa2/10771/Flight/FlightXProductDetailInfo
- // https://sec-m.ctrip.com/restapi/soa2/10771/Flight/FlightXProductDetailInfo
-
-
- if (env == 'prod') { // 生产
- domain = protocol === 'https' ? 'sec-m.ctrip.com' : 'm.ctrip.com';
- protocol = "https:";
- } else if(env == 'fws'){ // 其他
- domain = 'gateway.m.fws.qa.nt.ctripcorp.com';
- }
- path = "restapi/soa2/12600/Flight/FlightXProductDetailInfo";
-
- return protocol + "//" + domain + "/" + path;
  }
 
  function getData(path, data, callback) {
@@ -155,5 +133,4 @@ export function getUrl(){
  "stype": 0,
  "qInfo": qInfo
  };
- // 判断环境
- var apiPath = getUrl();*/
+*/

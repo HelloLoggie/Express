@@ -1,6 +1,7 @@
 <template>
     <div>
         <span :class="{'bg-primary text-danger':isA,'bg-success text-white':!isA}" @click="toggle()">{{isA}}</span>
+        <span>{{data.triptype}}</span>
     </div>
 </template>
 
@@ -18,18 +19,18 @@ export default {
       this.isA = !this.isA
     }
   },
-  asyncData ({ params, env, error ,isDev}) {
-    axios.get('/api/restroom')
+    asyncData ({ params, env, error ,isDev}) {
+    return axios.get('/api/restroom')
     .then((res)=> {
+        console.log(env)
         console.log(isDev)
-        return {title: res.data}
+        console.log(res.data.triptype)
+        return {data: res.data}
     })
     .catch((err)=> {
         error({ statusCode: 404, message: 'Post not found' })
         console.log(err.status)
     })
-    //   console.log(env, params)
-    // return {data: data.triptype}
   }
 }
 </script>

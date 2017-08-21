@@ -2,10 +2,12 @@
  * Created by gelq on 2017/8/14.
  */
 import { Router } from 'express'
+import axios from '../../plugins/axios';
+import {getUrl} from '../../assets/js/data'
 // 创建可安装的模块化路由处理程序，Router（）是完整的中间件和路由系统
 const router = Router()
 
-const data = {
+/*const data = {
     "ResponseStatus": {
         "Timestamp": "/Date(1501479914121+0800)/",
         "Ack": "Success",
@@ -116,7 +118,7 @@ const data = {
             ]
         }
     ]
-}
+}*/
 
 /*function filter (xPrdList) {
     let segno, xpdtnote
@@ -181,6 +183,14 @@ const data = {
     }
     return prds
 }*/
+
+/*const path = getUrl()
+let restroomData = axios.get('')
+    .then(function(res){
+
+    }).catch(function(error){
+
+});*/
 
 /* GET data listing. */
 router.get('/restroom', function (req, res, next) {
